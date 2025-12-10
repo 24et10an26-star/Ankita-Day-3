@@ -1,15 +1,97 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ID Card</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f0f0f0;
+        font-family: Arial, sans-serif;
+    }
+
+    .id-card {
+        width: 600px;
+        background: #ffffff;
+        border: 3px solid #39424e;
+        border-radius: 25px;
+        padding: 40px;
+        display: flex;
+        gap: 40px;
+        align-items: center;
+    }
+
+    /* Profile Circle */
+    .photo {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        overflow: hidden;
+        background: #cfe0f9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Text Area */
+    .details {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .name {
+        font-size: 40px;
+        font-weight: bold;
+        color: #000;
+    }
+
+    .line {
+        font-size: 28px;
+        color: #333;
+        line-height: 1.4;
+    }
+</style>
 </head>
 <body>
-      <b> Name </b>- Ankita Tripathi <br>
-      <b> Enrollment No. </b>- BTET24O1026 <br>
-      <b> Branch </b>- Electronics and Telecommunication
-      <img src=""
+
+<div class="id-card">
+
+    <!-- Profile Image -->
+    <div class="photo">
+        <!-- Yahan apni photo ka path daalna hai -->
+        <img src="my photo.jpeg" alt="Photo">
+    </div>
+
+    <!-- Details Section -->
+    <div class="details">
+        <div class="name">Ankita Tripathi</div>
+
+        <div class="line">Enrollment: BTET24O1026</div>
+        <div class="line">Branch: Electronics & Telecommunication</div>
+        <div class="line">Semester: 3rd</div>
+    </div>
+
+</div>
+
+</body>
+</html>
+}
+        
 
     
 </body>
